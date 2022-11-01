@@ -1,21 +1,21 @@
-import css from './ContactList.module.css';
+
+import {Button, ListItem} from '../Main.styled'
 
 const ContactList = ({ contacts, removeContact }) => {
   return (
-    <ul className={css.contacts_list}>
+    <ul>
       {contacts.map(contact => (
-        <li className={css.list_item} key={contact.id}>
+        <ListItem key={contact.id}>
           <p>
             <span>{contact.name}</span>: <span>{contact.number}</span>
           </p>
-          <button
-            className={css.delete_btn}
+          <Button
             type="button"
             onClick={() => removeContact(contact.id)}
           >
             delete
-          </button>
-        </li>
+          </Button>
+        </ListItem>
       ))}
     </ul>
   );

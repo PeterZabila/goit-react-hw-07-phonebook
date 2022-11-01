@@ -48,9 +48,8 @@ const App = () => {
       <Title>Phonebook</Title>
       <Form onSubmit={onAddContact} />
       <div>
-        <Title>Contacts</Title>
         <Filter filter={filter} onChangeFilter={onSetFilter} />
-
+        <Title>Contacts</Title>
         <ContactList
           contacts={getFilterContact()}
           removeContact={onRemoveContact}

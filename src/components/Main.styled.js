@@ -16,6 +16,13 @@ export const MainTitle = styled.h3`
     dsplay: block;
 `;
 
+export const ListItem = styled.li`
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+`;
+  
+
 export const Title = styled.h2`
     text-align: center;
     font-size: 22px;
